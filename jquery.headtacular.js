@@ -1,15 +1,17 @@
 /*
 **********************************************************
 * Headtacular | A nice minimalist sticky header
+* http://headtacular.com
 * 
-* Version:		v1.0.0
-* Author:		Mike Zarandona
-* Release:		July 16 2014
-* 				Initial release.
+* Version:		v1.0.1
+* Author:		Mike Zarandona | @mikezarandona
+* Release:		July 23 2014
+* 				Added options.parentOffset to turn on / off padding fix
+*				Fired a check at document.ready() for pre-scrolled pages
 * 
 * Reqs:			jQuery
 * 
-* Usage:		$('.header').headtacular({ scrollPoint: 10 });
+* Usage:		$('.header').headtacular();
 **********************************************************
 */
 
@@ -31,7 +33,7 @@
 
 
 		// document.scroll() event
-		$(document).on('scroll', function() {
+		$(document).on('read, scroll', function() {
 
 			// if scrolled past the scroll point
 			if ( $(document).scrollTop() > options.scrollPoint ) {
@@ -39,9 +41,13 @@
 				// if the object does not already have .is-stuck
 				if ( !elem.hasClass('is-stuck') ) {
 
-					// assign the class and padding fix
-					elem.addClass('is-stuck')
-						.parent().css('padding-top', elem.outerHeight(true));
+					// assign the class
+					elem.addClass('is-stuck');
+
+					// if parentOffset is turned on, apply the padding fix
+					if ( options.parentOffset ) {
+						elem.parent().css( 'padding-top', elem.outerHeight(true) );
+					}
 				}
 			}
 
@@ -52,8 +58,12 @@
 				if ( elem.hasClass('is-stuck') ) {
 
 					// remove the class and padding fix
-					elem.removeClass('is-stuck')
-						.parent().removeAttr('style');
+					elem.removeClass('is-stuck');
+
+					// if parentOffset is turned on, remove the padding fix
+					if ( options.parentOffset ) {
+						elem.parent().removeAttr('style');
+					}
 				}
 			}
 		});
@@ -64,6 +74,7 @@
 	// Default the defaults
 	$.fn.headtacular.options = {
 		scrollPoint: 10,
-		showScrollPoint: false
+		showScrollPoint: false,
+		parentOffset: true
 	};
 })(jQuery);
