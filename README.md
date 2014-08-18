@@ -67,6 +67,9 @@ You *could* try something like this:
 
 ## Changelog
 
+**v1.0.2**<br />
+- Bug fix:  fixed typo inside `document.ready()` event
+
 **v1.0.1**<br />
 + Added `options.parentOffset` to turn on / off padding fix<br />
 - Fired a check at `document.ready()` for pre-scrolled pages

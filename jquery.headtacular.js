@@ -3,11 +3,10 @@
 * Headtacular | A nice minimalist sticky header
 * http://headtacular.com
 * 
-* Version:		v1.0.1
+* Version:		v1.0.2
 * Author:		Mike Zarandona | @mikezarandona
-* Release:		July 23 2014
-* 				Added options.parentOffset to turn on / off padding fix
-*				Fired a check at document.ready() for pre-scrolled pages
+* Release:		Aug 18 2014
+* 				Bug fix - typo in ready event
 * 
 * Reqs:			jQuery
 * 
@@ -33,7 +32,7 @@
 
 
 		// document.scroll() event
-		$(document).on('read, scroll', function() {
+		$(document).on('ready scroll', function() {
 
 			// if scrolled past the scroll point
 			if ( $(document).scrollTop() > options.scrollPoint ) {
