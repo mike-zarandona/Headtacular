@@ -30,7 +30,7 @@ A nice minimalist sticky header.  [Project Site: http://headtacular.com](http://
 ## How it Works
 As the user scrolls, the script will check if they have scrolled past the `scrollPoint`.  If so, it will add the CSS class **`.is-stuck`** to the targeted object.
 
-**This is a BYOS** ( **B**ring **Y**our **O**wn **S**tyle ) **plugin**. That means it is up to you to style the targeted object as well as the `.is-stuck` class as this plugin doesn't come with any styling.  That keeps things flexible and simple.
+**This is a BYOS** (**B**_ring_ **Y**_our_ **O**_wn_ **S**_tyle_) **plugin**. That means it is up to you to style the targeted object as well as the `.is-stuck` class as this plugin doesn't come with any styling.  That keeps things flexible and simple.
 
 You *could* try something like this:
 
