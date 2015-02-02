@@ -67,6 +67,9 @@ You *could* try something like this:
 
 ## Changelog
 
+**v1.0.4**<br />
++ Documentation update.
+
 **v1.0.3**<br />
 + Added `bower.json` for Bower support.
 
