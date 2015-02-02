@@ -1,0 +1,26 @@
+{
+  "name": "Headtacular",
+  "version": "1.0.3",
+  "homepage": "http://headtacular.com",
+  "authors": [
+    "Mike Zarandona <mike@zarandona.com>"
+  ],
+  "description": "A nice minimalist sticky header.",
+  "main": "jquery.headtacular.js",
+  "keywords": [
+    "sticky",
+    "header",
+    "headtacular",
+    "stick"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1"
+  }
+}

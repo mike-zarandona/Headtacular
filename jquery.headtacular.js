@@ -3,10 +3,10 @@
 * Headtacular | A nice minimalist sticky header
 * http://headtacular.com
 * 
-* Version:		v1.0.2
+* Version:		v1.0.3
 * Author:		Mike Zarandona | @mikezarandona
-* Release:		Aug 18 2014
-* 				Bug fix - typo in ready event
+* Release:		Feb 02 2015
+* 				Added bower.json
 * 
 * Reqs:			jQuery
 * 
