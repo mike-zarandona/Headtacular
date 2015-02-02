@@ -67,6 +67,9 @@ You *could* try something like this:
 
 ## Changelog
 
+**v1.0.3**<br />
++ Added `bower.json` for Bower support.
+
 **v1.0.2**<br />
 - Bug fix:  fixed typo inside `document.ready()` event
 
