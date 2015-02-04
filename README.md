@@ -1,5 +1,6 @@
-Headtacular
-===========
+# Headtacular
+
+[![Bower version](https://badge.fury.io/bo/headtacular.svg)](http://badge.fury.io/bo/headtacular)
 
 A nice minimalist sticky header.  [Project Site: http://headtacular.com](http://headtacular.com).
 
