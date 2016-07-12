@@ -2,7 +2,7 @@
 
 [![Bower version](https://badge.fury.io/bo/headtacular.svg)](http://badge.fury.io/bo/headtacular)
 
-A nice minimalist sticky header.  [Project Site: http://headtacular.com](http://headtacular.com).
+A nice minimalist sticky header.  Project Site: [http://s.codepen.io/mike-zarandona/debug/zvEwKO](http://s.codepen.io/mike-zarandona/debug/zvEwKO).
 
 <br />
 
